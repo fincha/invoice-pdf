@@ -16,7 +16,10 @@ describe('create pdf', function () {
 	});
 	
 	it('convert html to pdf', function () {
-		return invoicePdf(htmlFile, pdfFile, {})
+		return invoicePdf(htmlFile, pdfFile, {
+			name: "Alexander Frischbutter",
+			brothers: ["Jack", "Joe", "Jim"]
+		})
 			.then(function (fileUrl) {
 				expect(fs.existsSync(pdfFile)).to.equal(true);
 				expect(fileUrl).to.equal(pdfFile);
