@@ -1,0 +1,32 @@
+{
+  "name": "invoice-pdf",
+  "version": "1.0.0",
+  "description": "generates a pdf from an input html with some placeholders",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fincha/invoice-pdf.git"
+  },
+  "keywords": [
+    "pdf",
+    "html",
+    "invoice"
+  ],
+  "author": "Alexander Frischbutter <alexander@fribu.de> (http://fribu.de)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fincha/invoice-pdf/issues"
+  },
+  "homepage": "https://github.com/fincha/invoice-pdf#readme",
+  "dependencies": {
+    "html-pdf": "^2.1.0",
+    "markup-js": "^1.5.21"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}
