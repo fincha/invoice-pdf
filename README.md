@@ -9,7 +9,7 @@ https://github.com/adammark/Markup.js
 
 ```
 
-const invoicePdf = require("invoice-pdf");
+const invoicePdf = require("markup-invoice-pdf");
 let pdfFile = __dirname + "/invoice.pdf";
 let htmlFile = __dirname + "/invoice.html";
 	

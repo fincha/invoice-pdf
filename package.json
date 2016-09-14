@@ -1,7 +1,7 @@
 {
-  "name": "invoice-pdf",
+  "name": "markup-invoice-pdf",
   "version": "1.0.0",
-  "description": "generates a pdf from an input html with some placeholders",
+  "description": "generates a pdf from an input html with some placeholders by using markup.js",
   "main": "index.js",
   "scripts": {
     "test": "make test"
