@@ -9,8 +9,10 @@
  * @param sourceFileName
  * @param targetFileName
  * @param context
+ * @param pdf options
  */
-module.exports = function (sourceFileName, targetFileName, context) {
+
+module.exports = function (sourceFileName, targetFileName, context, options) {
 	let p = new Promise(function (resolve, reject) {
 		const fs = require('fs');
 		const Mark = require("markup-js");
@@ -21,7 +23,7 @@ module.exports = function (sourceFileName, targetFileName, context) {
 				reject(err);
 			} else {
 				let renderedHtml = Mark.up(data, context);
-				pdf.create(renderedHtml).toFile(targetFileName, (err, res) => {
+				pdf.create(renderedHtml, options).toFile(targetFileName, (err, res) => {
 					if (err) {
 						reject(err);
 					} else {
